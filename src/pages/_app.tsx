@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import type { AppProps } from "next/app";
+import { NextIntlClientProvider } from "next-intl";
+import { useRouter } from "next/router";
+
 import localFont from "next/font/local";
 import "../styles/globals.css";
 
@@ -20,9 +23,13 @@ export const metadata: Metadata = {
 };
 
 export default function App({ Component, pageProps }: AppProps) {
-    return (
-        <div className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-            <Component {...pageProps} />
-        </div>
-    );
+  const router = useRouter();
+
+  return (
+    <NextIntlClientProvider locale={router.locale} timeZone="America/Santo_Domingo" messages={pageProps.messages}>
+      <div className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Component {...pageProps} />
+      </div>
+    </NextIntlClientProvider>
+  );
 }
