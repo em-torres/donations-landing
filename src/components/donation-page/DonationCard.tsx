@@ -36,16 +36,23 @@ const DonationCard = ({ donation_goal=0, total_donated=0, total_donors=0, total_
       </p>
 
       <div className="flex flex-col gap-2">
-        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-400 transition duration-300">{ t('shareButton') }</button>
-        <button className="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">{ t('donateButton') }</button>
+        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-400 transition duration-300">{t('shareButton')}</button>
+        <form className="bg-blue-800 text-white px-4 py-2 flex items-center justify-center rounded-lg hover:bg-blue-700 transition duration-300" action="https://www.paypal.com/donate" method="post" target="_top">
+          <input type="hidden" name="campaign_id" value="DUA5MQFX8GZWC"/>
+          <input type="submit" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" value={ t('donateButton') } />
+        </form>
       </div>
 
       <div className="flex items-center gap-3 font-semibold text-orange-600">
-        <Image src="/favicon.ico" alt="Donations Icon" width="35" height="35" />
-        <p>{ t('peopleDonated', { qty: formatDecimal(total_donors) })}</p>
+        <Image src="/favicon.ico" alt="Donations Icon" width="35" height="35"/>
+        <p>{t('peopleDonated', {qty: formatDecimal(total_donors)})}</p>
       </div>
 
-      <div></div>
+      <div>
+        {/*  TODO: Recent Donation */}
+        {/*  TODO: Top Donation */}
+        {/*  TODO: First Donation */}
+      </div>
 
       <div className="flex items-center justify-between gap-2">
         <button className="flex-1 px-6 py-2 border-2 rounded-lg hover:bg-[#2525250d] transition duration-300 hover:border-[#6f6f6f]">

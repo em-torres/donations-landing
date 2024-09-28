@@ -2,8 +2,16 @@
   "Home": {
     "title": "Home",
     "description": "Welcome to the home page",
+
     "donationTitle": "Donations",
     "donationMainImageAlt": "Fernanda's Main Image",
+    "donationOrganizer": "{organizer} is organizing this fundraiser.",
+    "donationDescription": "Hi everyone.\nAs most of you know, but to some this may be new too.\nOur son Jay was diagnosed with a grade 4 Glioblastoma brain tumour back in September 2021 at the young age of just 19 years old.\nHe underwent emergency surgery to remove it but sadly this wasn’t enough.\n\nThis led to him having to have radiotherapy,\n& 19 months of chemotherapy to which this took a massive toll on not only his body but also on Jay as a person.",
+
+    "readMoreButton": "Read More",
+
+    "wordsOfSupport": "Words of Support",
+    "createdAt": "Created on {date}",
 
     "donationCard": {
       "goalText": "<cont>{donated}</cont> raised of {goal} goal",

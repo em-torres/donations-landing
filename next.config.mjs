@@ -6,8 +6,9 @@ const nextConfig = {
     },
     images: {
         domains: [
+            'nextjs.org',
+            'paypal.com',
             'placehold.co',
-            'nextjs.org'
         ],
         dangerouslyAllowSVG: true
     }
