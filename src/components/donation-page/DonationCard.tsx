@@ -17,7 +17,7 @@ const DonationCard = ({ donation_goal=0, total_donated=0, total_donors=0, total_
   const progress: number = donation_goal > 0 ? (total_donated / donation_goal) * 100 : 0;
 
   return (
-    <div className="flex flex-col gap-3 p-4 bg-white rounded-lg shadow-md drop-shadow-md">
+    <div className="flex flex-col gap-5 p-8 bg-white rounded-lg shadow-md drop-shadow-md">
 
       <p className="text-sm">
         {
@@ -36,11 +36,11 @@ const DonationCard = ({ donation_goal=0, total_donated=0, total_donors=0, total_
       </p>
 
       <div className="flex flex-col gap-2">
-        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">{ t('shareButton') }</button>
-        <button className="bg-blue-800 text-white px-4 py-2 rounded-lg">{ t('donateButton') }</button>
+        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-400 transition duration-300">{ t('shareButton') }</button>
+        <button className="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">{ t('donateButton') }</button>
       </div>
 
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 font-semibold text-orange-600">
         <Image src="/favicon.ico" alt="Donations Icon" width="35" height="35" />
         <p>{ t('peopleDonated', { qty: formatDecimal(total_donors) })}</p>
       </div>
