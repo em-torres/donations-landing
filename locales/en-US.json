@@ -1,0 +1,18 @@
+{
+  "Home": {
+    "title": "Home",
+    "description": "Welcome to the home page",
+    "donationTitle": "Donations",
+    "donationMainImageAlt": "Fernanda's Main Image",
+
+    "donationCard": {
+      "goalText": "<cont>{donated}</cont> raised of {goal} goal",
+      "donationQtyText": "{qty} donations",
+      "shareButton": "Share",
+      "donateButton": "Donate",
+      "peopleDonated": "{qty} people just donated",
+      "seeAllButton": "See All",
+      "seeTopButton": "See Top"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Home": {
+    "title": "Inicio",
+    "description": "Bienvenido a la página de inicio",
+    "donationTitle": "Donaciones",
+    "donationMainImageAlt": "Imagen principal de Fernanda",
+
+    "donationCard": {
+      "title": "Donar",
+      "description": "Ayuda a Fernanda a seguir adelante",
+      "button": "Donar"
+    }
+  }
+}
